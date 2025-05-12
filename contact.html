@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Umi Kalsum</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+<!-- Header -->
+  <header>
+    <div class="logo">Umi Kalsum~</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="journey.html">Journey</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+
+<!-- Contact Section -->
+  <section class="contact-container">
+    <div class="contact-info">
+      <h2>Contact</h2>
+      <hr class="orange-line" />
+      <p>Send me a message!</p>
+      <p>&nbsp;&nbsp;</p>
+      <p><strong>e-mail:</strong><br />makalsumika08@gmail.com</p>
+      <p>&nbsp;</p>
+      <p><strong>Alamat:</strong><br />Jl. Sultan Alauddin II, Makassar</p>
+    </div>
+    <div class="contact-form">
+      <form>
+        <input class="kotak-input" type="text" placeholder="Name" required />
+        <input class="kotak-input" type="email" placeholder="Email" required />
+        <input class="kotak-input" type="text" placeholder="Subject" required />
+        <textarea class="kotak-input" placeholder="Message" rows="5" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+<!-- Footer -->
+  <div id="footer"></div>
+  <script>
+      fetch("footer.html").then(res => res.text()).then(data => {
+      document.getElementById("footer").innerHTML = data;
+      });
+  </script>  
+
+</body>
+</html>

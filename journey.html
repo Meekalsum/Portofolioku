@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Umi Kalsum</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+<!-- Header -->
+  <header>
+    <div class="logo">Umi Kalsum~</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="journey.html" class="active">Journey</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+<!-- Journey Section -->
+    <main>
+        <h2 class="blog-title">Journey</h2>
+        &nbsp;
+        <div class="container">
+          <div class="articles">
+              <!-- Artikel 1 -->
+              <div class="article">
+                  <img src="caloil.png" alt="Artikel 1">
+                  <h3>Project ini merancang dan mengembangkan situs web e-commerce dengan merek Caloil, termasuk aspek desain, UX/UI, branding, dan implementasi teknis. </h3>
+                  <p class="category">E-COMMERCE</p>
+              </div>
+  
+              <!-- Artikel 2 -->
+              <div class="article">
+                  <img src="SMA.png" alt="Artikel 2">
+                  <h3>Project ini terkait dengan manajemen kampanye iklan digital , khususnya dalam konteks kampanye politik atau sosial di Indonesia. Project ini melibatkan analisis data iklan dan dokumentasi pengeluaran. </h3>
+                  <p class="category">SOCIAL MEDIA ANALYSIS </p>
+              </div>
+  
+              <!-- Artikel 3 -->
+              <div class="article">
+                  <img src="Digmar.png" alt="Artikel 3">
+                  <h3>Project ini melibatkan analisis digital marketing berbasis konten yang diunggah di Instagram. Melalui laporan Insight, dapat dievaluasi kinerja konten berdasarkan engagement, jangkauan, dan jenis konten yang paling efektif.</h3>
+                  <p class="category">DIGITAL MARKETING</p>
+              </div>
+  
+              
+          </div>
+      </div>
+    </main>
+    <div>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    
+
+<!-- Footer -->
+    <div id="footer"></div>
+    <script>
+        fetch("footer.html").then(res => res.text()).then(data => {
+        document.getElementById("footer").innerHTML = data;
+        });
+    </script>  
+
+</body>
+</html>

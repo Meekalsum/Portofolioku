@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Umi Kalsum</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+<!-- Header -->
+  <header>
+    <div class="logo">Umi Kalsum~</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="journey.html">Journey</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+
+<!-- Blog Section -->
+  <main>
+    <h2 class="blog-title">Blog</h2>
+    <section class="blog-list">
+      <div class="blog-card">
+        <img src="volunteer.jpg" alt="Tips Volunteer" />
+        <div class="card-content">
+          <h3>Tips & Trik Lolos Fully Funded Volunteer</h3>
+          <p>Temukan berbagai tips dan trik untuk membantu Anda lolos seleksi volunteer.</p>
+          <a href="readmore.html" class="read-more">Read More</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <img src="wawancara.jpg" alt="Wawancara" />
+        <div class="card-content">
+          <h3>4 hal yang harus dihindari saat wawancara beasiswa</h3>
+          <p>Kesalahan umum saat wawancara beasiswa dan cara menghindarinya.</p>
+          <a href="readmore.html" class="read-more">Read More</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <img src="sunset.jpg" alt="Rekomendasi" />
+        <div class="card-content">
+          <h3>Rekomendasi Pantai untuk Sunsetan di Aceh</h3>
+          <p>Nikmati keindahan senja yang memukau di Aceh dengan rekomendasi pantai-pantai terbaik untuk menikmati momen sunset yang tak terlupakan.</p>
+          <a href="readmore.html" class="read-more">Read More</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <img src="maugang.jpg" alt="Tradisi" />
+        <div class="card-content">
+          <h3>Tradisi Meugang di Aceh Menyambut Ramadhan</h3>
+          <p>Mengupas makna dan keunikan Meugang, di mana masyarakat Aceh merayakan dengan menyajikan hidangan istimewa.</p>
+          <a href="readmore.html" class="read-more">Read More</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!-- Footer -->
+    <div id="footer"></div>
+    <script>
+        fetch("footer.html").then(res => res.text()).then(data => {
+        document.getElementById("footer").innerHTML = data;
+        });
+    </script>  
+
+</body>
+</html>

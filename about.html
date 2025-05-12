@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Umi Kalsum</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="logo">Umi Kalsum~</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="journey.html">Journey</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+<!-- About Section -->
+  <section class="about-section">
+    <div class="about-container1">
+      <div class="about-photo1">
+        <img src="gambar2.jpeg" alt="Umi Kalsum" />
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <hr class="orange-line" />
+        <div class="description1">
+          <p>Halo! saya Umi Kalsum, seorang junior web developer dan mahasiswa bisnis digital yang memiliki minat besar dalam membangun dan mengembangkan website yang fungsional, responsif, dan user-friendly. Dengan latar belakang bisnis digital, memberi saya pemahaman mendalam tentang bagaimana teknologi dapat diterapkan untuk menciptakan solusi inovatif dalam dunia bisnis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Skills Section -->
+  <section class="skills-section">
+    <h2>My Skills</h2>
+    <hr class="orange-line" />
+    <div class="skill">
+      <span>Digital Marketing</span>
+      <div class="progress"><div class="bar" style="width:70%"></div></div>
+      <span class="percentage">70%</span>
+    </div>
+    <div class="skill">
+      <span>Social Media Analysis</span>
+      <div class="progress"><div class="bar" style="width:60%"></div></div>
+      <span class="percentage">60%</span>
+    </div>
+    <div class="skill">
+      <span>WordPress</span>
+      <div class="progress"><div class="bar" style="width:60%"></div></div>
+      <span class="percentage">60%</span>
+    </div>
+    <div class="skill">
+      <span>UI/UX Design</span>
+      <div class="progress"><div class="bar" style="width:40%"></div></div>
+      <span class="percentage">40%</span>
+    </div>
+    <div class="skill">
+      <span>Machine Learning</span>
+      <div class="progress"><div class="bar" style="width:40%"></div></div>
+      <span class="percentage">40%</span>
+    </div>
+    <div class="skill">
+      <span>Python</span>
+      <div class="progress"><div class="bar" style="width:50%"></div></div>
+      <span class="percentage">50%</span>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+  <script>
+    fetch("footer.html").then(res => res.text()).then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+  </script>
+
+</body>
+</html>

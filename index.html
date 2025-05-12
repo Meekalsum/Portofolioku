@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Umi Kalsum</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="logo">Umi Kalsum~</div>
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="blog.html">Blog</a>
+    <a href="journey.html">Journey</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- Home Section -->
+  <main class="content">
+    <div class="profile-img">
+      <img src="IMG_3923.jpg" alt="Umi Kalsum" />
+    </div>
+    <div class="about-text">
+      <h2>Hello!</h2>
+      <hr class="orange-line" />
+      <p class="intro">I’m Umi Kalsum</p>
+      <p><em>Junior web developer</em> || Traveler</p>
+      <p>&nbsp;&nbsp;&nbsp;</p>
+      <h3>About Me</h3>
+      <hr class="orange-line" />
+      <p>Halo, saya Umi Kalsum seorang junior web developer dan mahasiswa bisnis digital yang aktif dalam isu ekonomi dan lingkungan.</p>
+      &nbsp;&nbsp;
+      <a href="blog.html" class="watch-reel-button">Watch Blog</a>
+    </div>
+  </main>
+
+
+  <div id="footer"></div>
+  <script>
+    fetch("footer.html").then(res => res.text()).then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+  </script>  
+
+</body>
+</html>
