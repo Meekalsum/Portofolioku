@@ -1,17 +1,17 @@
 /* Reset */
-* {
-    margin: 0;
+* { /* Menarget semua elemen HTML */
+    margin: 0; /* Menghilangkan spasi default */
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Agar padding dan border tidak menambah lebar total elemen */
   }
   
-  body {
+  body { /* Mengatur font utama dan warna latar teks. */
     font-family: 'Segoe UI', sans-serif;
     background-color: #fff;
     color: #333;
   }
   
-  /* Header */
+  /* Header: Menyusun elemen header secara horizontal (flex), dengan spasi antara elemen di kiri dan kanan */
   header {
     display: flex;
     justify-content: space-between;
@@ -20,13 +20,13 @@
     background-color: #eee;
   }
   
-  .logo {
+  .logo { /* Mengatur gaya teks logo */
     font-family: 'Brush Script MT', cursive;
     font-size: 28px;
     font-weight: bold;
   }
   
-  nav a,
+  nav a, /* Mengatur tampilan umum semua link navigasi */
   .nav-links a,
   nav ul li a {
     margin: 0 15px;
@@ -35,7 +35,7 @@
     font-weight: 500;
   }
   
-  nav a.active,
+  nav a.active, /* Memberi gaya khusus pada link aktif (yang sedang dikunjungi) */
   .nav-links a.active,
   nav ul li a.active {
     color: #aaa;
@@ -124,7 +124,6 @@
   .watch-reel-button:active {
     transform: scale(0.98); /* Tombol sedikit berkontraksi saat aktif */
   }
-
 
   /* About Section */
   .about-img img,
@@ -235,8 +234,7 @@
     margin-top: 40px;
   }
   
-  
-  .blog-list {
+    .blog-list {
     max-width: 900px;
     margin: auto;
     padding: 40px 20px;
@@ -327,23 +325,21 @@
     width: 100%;
     height: 200px;
     object-fit: cover;
-}
+  }
 
 .article h3 {
     font-size: 18px;
     margin: 10px;
     color: #333;
-}
+  }
 
 .article .category {
     font-size: 14px;
     margin: 0 10px 10px;
     color: #e74c3c; /* Merah untuk kategori */
-}
-
+  }
 
   
-
   /* Contact Section */
   .contact-container {
     display: flex;
@@ -365,8 +361,6 @@
     border-radius: 15px;
   }
   
-
-
   .contact-info h2 {
     color: #e64a19;
   }
