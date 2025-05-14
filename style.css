@@ -61,7 +61,7 @@
     display: flex;
     justify-content: space-between;
     align-items: stretch; 
-    padding: 40px 10%;
+    padding: 10px 10%;
     gap: 0rem;
     flex-wrap: wrap;
   }
@@ -145,7 +145,7 @@
     align-items: center;
     justify-content: center;
     gap: 15px; /* Jarak antara foto dan teks */
-    padding: 40px;
+    padding: 10px;
     flex-wrap: wrap; /* Agar responsif di layar kecil */
   }
   
@@ -156,8 +156,10 @@
   
     .description1 {
     max-width: 600px;
-    padding: 50px;
+    padding: 20px;
     border-radius: 8px;
+    text-align: justify;
+    
   }
 
   .about-text h2,
@@ -191,6 +193,7 @@
   .about-text p {
     line-height: 1.6;
     font-size: 1rem;
+    text-align: justify;
   }
 
   .percentage {
@@ -198,7 +201,6 @@
     color: #555;
   }
 
-  
 
   /* Skills Section */
   .skills-section {
@@ -207,6 +209,7 @@
   
   .skill {
     margin-bottom: 20px;
+  
   }
   
   .skill span {
@@ -215,9 +218,11 @@
   
   .progress {
     background-color: #e0e0e0;
-    height: 20px;
+    height: 3px;
     border-radius: 10px;
     overflow: hidden;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
   
   .bar {
@@ -315,6 +320,8 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease;
+    text-align: justify;
+    padding: 10px;
 }
 
 .article:hover {
@@ -335,7 +342,7 @@
 
 .article .category {
     font-size: 14px;
-    margin: 0 10px 10px;
+    margin-left: 0 10px 10px;
     color: #e74c3c; /* Merah untuk kategori */
   }
 
